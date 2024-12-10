@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<title>Home - TXT</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<style>
+		#dynamic-email {
+			height: 36px;
+			width: 137px;
+			border: 0;
+			padding: 0;
+			font-size: 12px;
+			font-style: italic;
+			color: #333;
+			border-radius: 5px;
+			transition: background-color 0.3s, color 0.3s;
+		}
+		#dynamic-email.fun {
+			background-color: #F0F8FF;
+			color: #007BFF;
+		}
+	</style>
+	
+	<style>
+		/* Styling for the greeting banner */
+		#greeting-banner {
+			position: fixed;
+			top: -100px; /* Start off-screen */
+			left: 0;
+			width: 100%;
+			background-color: #9733ff;
+			color: white;
+			text-align: center;
+			padding: 10px;
+			font-size: 18px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			transition: top 0.5s ease, opacity 0.5s ease;
+			z-index: 1000;
+		}
+		#greeting-banner.visible {
+			top: 0; /* Slide into view */
+		}
+		#greeting-banner.fade-out {
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+		<script>
+		window.alert('Welcome Prof Ozaydin! \nThank You for visiting.');
+		function emailFunEffect(event) {
+			const emailInput = event.target;
+			if (emailInput.value.includes('@')) {
+				emailInput.classList.add('fun');
+			} else {
+				emailInput.classList.remove('fun');
+			}
+		}
+		</script>
+		
+		<script>
+		// Display the animated greeting banner
+		function showGreetingBanner() {
+			const banner = document.getElementById('greeting-banner');
+			banner.classList.add('visible'); // Slide down the banner
+
+			// After 5 seconds, fade out the banner
+			setTimeout(() => {
+				banner.classList.add('fade-out');
+				// Remove the banner after fading out
+				setTimeout(() => banner.remove(), 500);
+			}, 5000);
+		}
+
+		// Trigger the greeting banner when the page loads
+		window.onload = showGreetingBanner;
+	</script>
+
+	<div id="greeting-banner">
+		🌟 Welcome to TXT's Official Fan Page! 🌟 Enjoy your visit! Prof plz read the paragraph under video😊
+	</div>
+	
+	<div id="header">
+		<div class="header">
+			<ul>
+				<li class="selected">
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="about.html">about</a>
+				</li>
+				<li>
+					<a href="blog.html">MVs</a>
+				</li>
+				<li>
+					<a href="shows.html">Albums</a>
+				</li>
+			</ul>
+			<form action="index.html">
+				<input 
+					type="text" 
+					id="dynamic-email" 
+					placeholder="Enter your fun email"
+					oninput="emailFunEffect(event)"
+				>
+				<input type="submit" name="submit" id="submit" value="">
+			</form>
+		</div>
+	</div>
+	<div id="body">
+		<div class="content">
+			<h1>7TH MINI ALBUM  - The Star Chapter: Sanctuary</h1>
+			<video src="images\3Txt (투모로우바이투게더)  Over The Moon (Our Sanctuary Ver.)  Official Mv.mp4"controls width="500" height="360"></video>
+			<p> Changes that I made-</p>
+			<p>1.Using JS i displayes welcoming message for Prof and also add a new JS function which displays fun notice.
+			</p>
+			<p>2.I change the footer of all pages into my ID and name.
+			</p>
+			<p>3.I change the background picture, font-size, color, background-color, color of the selected page. 
+			</p>
+			<p>4.I add one video in the home page where you can just watch without going to another page. Also, only in the home page, if you type text with @ in the email box in the top-right corner, the text will turn blue once u used @.
+			</p>
+			<p>5.Social media icons, on the side-bar, are the official website of this kpop group so just tapping the icons will bring you to their page.
+			</p>
+			<p>6.On the side-bar, just tapping the picture under latest album section will bring you to the you-tube video of that song.
+			</p>
+			<p>7.On the MVS page, under the musicvideo section, clicking "watch now" will bring you to the you-tube video of the corresponding song written beside it. I also change the color of the font, background color, and the background color of the selected section.
+			</p>
+			<p>8.On the Albums page, select the picture will take you to the playlist songs video of the selected album. I change the font style and color and also use css to make the albums line up automatically.
+			</p>
+			<p>9.Under shows section, clicking the text will direct you to the you-tube video of that show. You can do this on any page except albums page.
+			</p>
+		</div>
+		<div class="sidebar">
+			<div>
+				<h3>shows</h3>
+				<ul>
+					<li>
+						<a href="https://youtube.com/playlist?list=PLcZxoPUYVQX2vpHvmxzoSiffZh5Xw3TGe&si=-S6QQzuQ3CTgaV3s"><b>TO DO X TXT</b></a>
+					</li>
+					<li>
+						<a href="https://youtube.com/playlist?list=PLcZxoPUYVQX1dffyKtyNYpWWl40COUDz2&si=ckMuY3CRpWGD_YbP"><b>TALK X TODAY</b></a>
+					</li>
+					<li>
+						<a href="https://youtube.com/playlist?list=PLcZxoPUYVQX10oqupDE8cVYKFmZIHY-eT&si=fCo6hy8pndxicRrK"><b>ONE DREAM TXT</b></a>
+					</li>
+					<li>
+						<a href="https://youtu.be/5aGlJmrBNuw?si=PNUVk47_jzlBKuqp"><b>TXT COMEBACK SHOW</b></a>
+					</li>
+				</ul>
+			</div>
+			<div class="album">
+				<h3>latest album</h3>
+				<a href="https://youtu.be/iCmD508bXkw?si=oTHeTjawYBWoVLBR"><img src="images/album-cover.jpg" height=250 alt=""></a> <span>Latest Album 2024 - Sanctuary</span>
+			</div>
+			<div class="sidebar">
+				<ul class="social-links">
+					<li>
+						<a href="https://www.instagram.com/TXT_bighit/" target="_blank">
+						<img src="images/insta.jpg" height=30px alt="Instagram">
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/TXT_members" target="_blank">
+						<img src="images/twitter.png" height=30px alt="X">
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/TXT_bighit_jp" target="_blank">
+						<img src="images/twitter.png" height=30px alt="X">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/" target="_blank">
+						<img src="images/youtube.png" height=30px alt="YouTube">
+						</a>
+					</li>
+					<li>
+						<a href="https://line.me/R/ti/p/@txt-jp" target="_blank">
+						<img src="images/line.png" height=30px alt="LINE">
+						</a>
+					</li>
+					<li>
+						<a href="https://weverse.io/txt/" target="_blank">
+						<img src="images/wechat.png" height=30px alt="Weverse">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.tiktok.com/@txt" target="_blank">
+						<img src="images/tik-tok.png" height=30px alt="TikTok">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>
+			ID: 23319050
+			<br> NAME: HIDAM SUSHITRA DEVI
+		</p>
+	</div>
+</body>
+</html>
